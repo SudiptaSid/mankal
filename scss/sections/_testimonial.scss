@@ -1,0 +1,89 @@
+.testimonialSec {
+  .headingArea {
+    position: absolute;
+    transform: translate(58%, 80%);
+    z-index: 11;
+    left: 0;
+    width: 30%;
+
+    @media (max-width: 991.98px) {
+      position: relative;
+      transform: translate(0);
+      width: 100%;
+      z-index: 1;
+    }
+  }
+
+  .item {
+    width: 65%;
+    margin-left: auto;
+
+    @media (max-width: 991.98px) {
+      width: 100%;
+    }
+  }
+
+  .reviewSec {
+    display: block;
+    margin-top: 50px;
+    transform: translateX(-25%);
+
+    @media (max-width: 991.98px) {
+      transform: translateX(0);
+      margin-top: 80px;
+    }
+
+    .text {
+      width: 74%;
+
+      @media (max-width: 991.98px) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    .quoteIcon {
+      position: absolute;
+      right: 0;
+      bottom: 50%;
+      font-size: 20px;
+
+      @media (max-width: 991.98px) {
+        position: absolute;
+        right: 50%;
+        top: -37%;
+        bottom: auto;
+        transform: translateX(-50%);
+        font-size: 20px;
+      }
+
+      @media (max-width: 767.98px) {
+        top: -16%;
+      }
+    }
+  }
+
+  .userSec {
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    z-index: 11;
+
+    @media (max-width: 991.98px) {
+      position: relative;
+      left: auto;
+      top: auto;
+      text-align: center;
+    }
+
+    .userName {
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .userLocation {
+      font-size: 18px;
+      font-weight: 300;
+    }
+  }
+}

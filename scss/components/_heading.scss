@@ -1,0 +1,103 @@
+// Heading
+.headingArea {
+  position: relative;
+  transform: translate(63%, 80%);
+  z-index: 11;
+
+  @media (max-width: 991.98px) {
+    transform: translate(0);
+    margin: auto;
+    margin-bottom: 50px;
+    width: 60%;
+  }
+
+  @media (max-width: 767.98px) {
+    width: 100%;
+  }
+
+  .heading {
+    font-size: 55px;
+    font-family: $titleFont;
+    font-weight: 700;
+    color: $blackClr;
+    margin-bottom: 0;
+
+    @media (max-width: 991.98px) {
+      font-size: 50px;
+      text-align: center;
+    }
+
+    @media (max-width: 767.98px) {
+      font-size: 45px;
+    }
+  }
+
+  &.longArea {
+    transform: translate(92%, 63%);
+    width: 85%;
+
+    @media (max-width: 991.98px) {
+      transform: translate(0);
+      width: 100%;
+    }
+  }
+}
+
+// Text
+.text {
+  color: $blackClr;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+// Animation Text
+.anim-text {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+
+  &:hover {
+    transition: all 0.8s cubic-bezier(0, 0, 0.23, 1);
+    background-position: 0%;
+  }
+
+  @media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance:none) {
+      -webkit-background-clip: unset;
+      -webkit-text-fill-color: unset;
+      background-image: unset;
+      background-image: unset;
+      background-size: unset;
+      background-position: unset;
+    }
+  }
+
+  &.black {
+    background-image: linear-gradient(to right, $redClr, $redClr 50%, $blackClr 50%);
+
+    @media not all and (min-resolution:.001dpcm) {
+      @supports (-webkit-appearance:none) {
+        color: $blackClr;
+
+        &:hover {
+          color: $redClr;
+        }
+      }
+    }
+  }
+
+  &.white {
+    background-image: linear-gradient(to right, $redClr, $redClr 50%, $whiteClr 50%);
+
+    @media not all and (min-resolution:.001dpcm) {
+      @supports (-webkit-appearance:none) {
+        color: $whiteClr;
+
+        &:hover {
+          color: $redClr;
+        }
+      }
+    }
+  }
+}

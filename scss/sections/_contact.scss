@@ -1,0 +1,77 @@
+.contactSec {
+  .headingArea {
+    transform: translate(75%, 132%);
+    width: 100%;
+
+    @media (max-width: 991.98px) {
+      transform: translate(0);
+      width: 100%;
+    }
+  }
+  
+  .contactInner {
+    border: solid 10px $borderClrThree;
+    padding: 80px;
+
+    @media (max-width: 991.98px) {
+      padding: 80px 20px;
+    }
+    
+    .contactDetails {
+      ul {
+        padding-left: 0;
+
+        li {
+          list-style: none;
+          display: inline-flex;
+          align-items: center;
+          margin-right: 50px;
+          font-size: 18px;
+          font-weight: 300;
+          color: $textClrTwo;
+
+          @media (max-width: 991.98px) {
+            display: block;
+            margin-right: 0;
+            margin-bottom: 40px;
+            font-size: 18px;
+            text-align: center;
+          }
+
+          i {
+            color: $blackClr;
+            font-size: 26px;
+            margin-right: 10px;
+
+            @media (max-width: 991.98px) {
+              margin-right: 0;
+              display: block;
+              margin-bottom: 8px;
+            }
+          }
+        }
+      }
+    }
+  
+    .contactForm {
+      width: 50%;
+      margin: auto;
+
+      @media (max-width: 991.98px) {
+        width: 100%;
+        margin: auto;
+      }
+
+      .form-control {
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: solid 1px $borderClr;
+      }
+
+      .contactSec .btnInverse {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

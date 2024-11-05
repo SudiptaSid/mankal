@@ -1,0 +1,63 @@
+// Opacity
+.opacity-5 {
+  opacity: .5;
+}
+
+.opacity-7 {
+  opacity: .7;
+}
+
+// Padding
+.paddingTop {
+  padding-top: 120px;
+
+  @media (max-width: 767.98px) {
+    padding-top: 80px;
+  }
+}
+
+.paddingBottom {
+  padding-bottom: 120px;
+
+  @media (max-width: 767.98px) {
+    padding-bottom: 80px;
+  }
+}
+
+.paddingTopHalf {
+  padding-top: 80px;
+
+  @media (max-width: 767.98px) {
+    padding-top: 40px;
+  }
+}
+
+.paddingBottomHalf {
+  padding-bottom: 80px;
+
+  @media (max-width: 767.98px) {
+    padding-bottom: 40px;
+  }
+}
+
+// Overlay
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+
+  &.white {
+    background-color: rgba($whiteClr, 0.5);
+  }
+
+  &.black {
+    background-color: rgba($blackClr, 0.5);
+  }
+}
+
+// Position
+.position-relative {
+  position: relative;
+}

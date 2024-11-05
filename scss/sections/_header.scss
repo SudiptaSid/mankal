@@ -1,0 +1,142 @@
+.menuLine {
+  position: absolute;
+  left: -50px;
+  font-size: 3.6rem;
+  font-weight: bolder;
+  color: $textClrThree;
+  top: 32px;
+  display: block;
+  text-align: center;
+  width: auto;
+  height: 75px;
+  pointer-events: none;
+  transition: transform 0.5s;
+  transition-timing-function: cubic-bezier(1, 0.01, 0, 1.22);
+
+  i {
+    transform: rotate(-10deg);
+    display: inline-block;
+  }
+}
+
+.navbar-nav {
+  .nav-link {
+    @media (min-width: 1200px) and (max-width: 1300px) {
+      font-size: 38px;
+    }
+
+    &:nth-child(1).active~.menuLine {
+      transform: translate3d(0, 0, 0);
+    }
+    
+    &:nth-child(2).active~.menuLine {
+      transform: translate3d(0, 100%, 0);
+    }
+
+    &:nth-child(3).active~.menuLine {
+      transform: translate3d(0, 200%, 0);
+    }
+    
+    &:nth-child(4).active~.menuLine {
+      transform: translate3d(0, 300%, 0);
+    }
+    
+    &:nth-child(5).active~.menuLine {
+      transform: translate3d(0, 400%, 0);
+    }
+    
+    &:nth-child(6).active~.menuLine {
+      transform: translate3d(0, 500%, 0);
+    }
+    
+    &:nth-child(7).active~.menuLine {
+      transform: translate3d(0, 600%, 0);
+    }
+
+    &:nth-child(1):hover~.menuLine {
+      transform: translate3d(0, 0, 0);
+    }
+    
+    &:nth-child(2):hover~.menuLine {
+      transform: translate3d(0, 100%, 0);
+    }
+    
+    &:nth-child(3):hover~.menuLine {
+      transform: translate3d(0, 200%, 0);
+    }
+    
+    &:nth-child(4):hover~.menuLine {
+      transform: translate3d(0, 300%, 0);
+    }
+    
+    &:nth-child(5):hover~.menuLine {
+      transform: translate3d(0, 400%, 0);
+    }
+    
+    &:nth-child(6):hover~.menuLine {
+      transform: translate3d(0, 500%, 0);
+    }
+    
+    &:nth-child(7):hover~.menuLine {
+      transform: translate3d(0, 600%, 0);
+    }
+  }
+}
+
+header {
+  .headerAppear {
+    .sidemenuBtn {
+      position: fixed;
+      left: 30px;
+      top: 30px;
+      z-index: 11;
+      animation-name: animationFade;
+      animation-duration: 1s;
+      animation-fill-mode: both;
+
+      @media (max-width: 991.98px) {
+        position: relative;
+        left: auto;
+        top: auto;
+      }
+    }
+  }
+
+  .innerHeader {
+    padding: 10px 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 111;
+    background-color: $whiteClr;
+
+    &.headerAppear {
+      @media (max-width: 991.98px) {
+        position: fixed;
+        animation-name: animationFade;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        box-shadow: 0 10px 10px -10px rgba($blackClr, 0.35);
+      }
+    }
+  }
+
+  .navbar-brand {
+    margin-right: 0;
+
+    img {
+      @media (max-width: 767.98px) {
+        max-width: 70%;
+        margin: auto;
+      }
+    }
+  }
+
+  .btnMain {
+    @media (max-width: 767.98px) {
+      padding: 8px 16px;
+      font-size: 13px;
+    }
+  }
+}

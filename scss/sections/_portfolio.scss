@@ -1,0 +1,47 @@
+.portfolioSec {
+  .portfolioCarousel {
+    .workDetail {
+      margin-top: 50px;
+
+      .workHeading {
+        font-size: 26px;
+        font-weight: 500;
+      }
+      
+      .btn {
+        margin-right: 3px;
+      }
+    }
+  }
+
+  .workNavigation {
+    position: absolute;
+    left: -80px;
+    top: 50%;
+
+    a {
+      text-decoration: none;
+      display: block;
+      transition: .8s ease;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-image: linear-gradient(to right, $redClr, $redClr 50%, $blackClr 50%);
+      background-size: 200% 100%;
+      background-position: 100%;
+
+      i {
+        font-size: 34px;
+      }
+
+      &:hover {
+        transition: all 0.8s cubic-bezier(0, 0, 0.23, 1);
+        background-position: 0%;
+      }
+
+      &.portfolioRightArrow {
+        margin-top: 0;
+        margin-left: 41px;
+      }
+    }
+  }
+}

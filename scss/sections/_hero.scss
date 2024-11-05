@@ -1,0 +1,41 @@
+.main {
+  height: 98vh;
+
+  @media (max-width: 991.98px) {
+    height: auto;
+  }
+
+  .img-area {
+    height: 98vh;
+    overflow: hidden;
+
+    @media (max-width: 991.98px) {
+      height: auto;
+    }
+  }
+
+  .slider-img {
+    @media (max-width: 991.98px) {
+      margin-top: 90px;
+    }
+
+    @media (max-width: 767.98px) {
+      margin-top: 70px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .overlay {
+      &.white {
+        right: 78%;
+        
+        @media (max-width: 991.98px) {
+          display: none;
+        }
+      }
+    }
+  }
+}
